@@ -1,22 +1,25 @@
 {
-  "name": "dawuo",
+  "name": "test2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dawuo/dawuo.git"
-  },
+     "type": "git",
+     "url": "git+https://github.com/dawuo/dawuo.git"
+                },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dawuo/dawuo/issues"
-  },
-  "homepage": "https://github.com/dawuo/dawuo#readme",
+     "url": "https://github.com/dawuo/dawuo/issues"
+          },
+  "homepage": "https://github.com/dawuo/dawuo#readme",        
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongodb":"*",
+    "mongoose":"*",
+    "body-parser":"*"
   }
 }
