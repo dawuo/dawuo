@@ -1,10 +1,17 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+var bodyParser = require('body-parser');
+var http = require('http');
+var path = require('path');
+const app = express();
+require('./models/db.js');
 
-app.listen(7125)
 
-app.get('/index', function(req, res){
+app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-  res.sendfile('index.html')
-})
+var routes = require('./routes/routes')(app);
+app.listen(7125);
+
+
 

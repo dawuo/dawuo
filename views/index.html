@@ -1,0 +1,118 @@
+<html>
+<head>
+  <title></title>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="http://luffy.ee.ncku.edu.tw:7125/app.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <link rel="shortcut icon" href="http://imgur.com/9Q4TtAd" />
+            <link rel="bookmark" href="http://imgur.com/9Q4TtAd" />
+            </head>
+
+            <body>
+            <div class="phone">
+            <img class='logo' src="http://i.imgur.com/DkTnifd.png">
+            <!--登入按鈕-->
+            <div href="#" class="facebook" id="fb"> 
+            <fb:login-button scope="public_profile,user_friends,email" onlogin="checkLoginState();" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true">
+            </fb:login-button>
+            <div id="status"></div>
+            </div>
+
+            </div>
+
+            <div class='main'>
+            <!--                                                        
+            <div id="fblogout">
+            <button onclick="logout();">Log out</button>-->
+
+            <!--點擊細節頁面-點擊1-->
+            <div class='block1'>   
+            <div class='pic'><img src="http://i.imgur.com/qTlPISL.png"></div>
+            </div>
+            <!--點擊細節頁面-點擊2-->
+            <div class='block2'>
+            <div class='pic'><img src="http://i.imgur.com/hwLzJlZ.png"></div>
+            <!--      <a href="#" class="button" id="close2">返回</a>-->
+            </div>
+
+            <!--上面為點擊細節頁面-->
+
+            <div class='up'>
+            <div class='up1'>
+            <div class='upA'>
+            <div class="page" id="page1">早餐</div>
+            <div class="page" id="page2">早午餐</div>
+            <div class="page" id="page3">午餐</div>
+            <div class="page" id="page4">晚餐</div>
+            <div class="page" id="page5">宵夜</div>
+            </div>
+
+            <div class='upB'> 
+            <div class="upB-1">
+            <div class="pageB-1" id="page1-1"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-1" id="page1-2"><img src="http://i.imgur.com/91xrdlc.png" alt="" /></div>
+            <div class="pageB-1" id="page1-3"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-1" id="page1-4"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            </div>
+            <div class="upB-2">
+            <div class="pageB-2" id="page2-1"><img src="http://i.imgur.com/NrXyTt5.png" alt="" /></div>
+            <div class="pageB-2" id="page2-2"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-2" id="page2-3"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-2" id="page2-4"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            </div>
+            <div class="upB-3">
+            <div class="pageB-3" id="page3-1"><img src="http://i.imgur.com/oKrvwF7.png" alt="" /></div>
+            <div class="pageB-3" id="page3-2"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-3" id="page3-3"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-3" id="page3-4"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            </div>
+            <div class="upB-4">
+            <div class="pageB-3" id="page4-1"><img src="http://i.imgur.com/oTOchTQ.png" alt="" /></div>
+            <div class="pageB-3" id="page4-2"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-3" id="page4-3"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-3" id="page4-4"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            </div>
+            <div class="upB-5">
+            <div class="pageB-3" id="page5-1"><img src="http://i.imgur.com/oRQB5PF.png" alt="" /></div>
+            <div class="pageB-3" id="page5-2"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-3" id="page5-3"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            <div class="pageB-3" id="page5-4"><img src="http://i.imgur.com/W7X3les.png" alt="" /></div>
+            </div>
+            </div>
+
+
+            </div>
+
+            <div class='up2'>
+            <div id='title'>我要開團!</div><hr>
+            <form action="/" method="/"> 搭伙團團名：<input type="text" name="topic">
+            <br> 時間分類: <select name="kinds1">
+            <option value="breakfast">早餐</option>
+            <option value="brunch">早午餐</option>
+            <option value="lunch">午餐</option>
+            <option value="dinner">晚餐</option>
+            <option value="supper">消夜</option><br>
+            </select><br>搭伙日期
+            <input type="date" name="day"><br> 搭伙時間
+            <input type="time" name="when"><br> 菜單:
+            <br><textarea name='what'></textarea><br>菜色、口味介紹:
+            <br><textarea name='about'></textarea><br>放張照片介紹你的菜色吧!
+            <input type="file" name="img"><br>
+            <input type="reset" id='sent' value="送出表單">
+            </form>
+            </div>
+            <div class='up3'>
+            <img class='userpage' src="http://i.imgur.com/bd5DssL.png">
+            </div>
+            </div>
+            <div class='down'>
+            <div class="downp" id="downp1"><img src="http://i.imgur.com/Qz1Zajt.png"></div>
+            <div class="downp" id="downp2"><img src="http://i.imgur.com/gcUrOSv.png"></div>
+            <div class="downp" id="downp3"><img src="http://i.imgur.com/Aaw4bmf.png"></div>
+            </div>
+            <script src="http://luffy.ee.ncku.edu.tw:7125/ass.js"></script>
+
+            </div>  
+            </body>
+
+            </html>
